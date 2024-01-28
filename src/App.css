@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    background: #FFF7ED;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }

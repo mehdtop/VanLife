@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    padding: 25.681px 106.284px 25.148px 106px;
+    justify-content: center;
+    align-items: center;
+    background: #252525;
+}
+.footer p{
+    color: #AAA;
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 22.923px; /* 163.733% */
+}
