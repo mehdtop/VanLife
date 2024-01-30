@@ -1,0 +1,13 @@
+.host-vans{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 3rem;
+}
+.host-vans h1{
+    color: #161616;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 33.652px; /* 105.164% */
+    }

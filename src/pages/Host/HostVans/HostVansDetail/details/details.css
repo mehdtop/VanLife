@@ -1,0 +1,17 @@
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-top: 2rem;
+}
+.details p{
+    color: #161616;
+    font-family: Inter;
+    font-size: 14.355px;
+    font-weight: 500;
+    line-height: 21.46px;
+
+}
+.details p:nth-child(2){
+    text-transform: capitalize;
+}

@@ -1,0 +1,18 @@
+.pricing{
+    display: flex;
+    align-items: center;
+}
+.pricing p:first-child{
+    color: #161616;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 21.46px; /* 89.416% */
+}
+.pricing p:last-child{
+    color: #4D4D4D;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.46px; /* 134.124% */
+}

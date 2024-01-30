@@ -15,7 +15,7 @@ export default function VanDetails(){
     ,[param.id])
     return(
         <div className="van-details-container">
-            <Link to="/van">
+            <Link to="./..">
                 <div className="back">
                 <img src={arrow} alt="arrow" /><p>Back to all vans</p>
                 </div>

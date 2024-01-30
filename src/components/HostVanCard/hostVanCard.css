@@ -1,0 +1,27 @@
+.host-van-card{
+    display: flex;
+    padding: 1.5rem 2rem;
+    align-items: center;
+    border-radius: 6px;
+    background: #FFF;
+}
+.host-van-card img{
+    width: 10em;
+    height: 10rem;
+    border-radius: 5px;
+    margin-right: 1.5rem;
+}
+.host-van-card-content h2{
+    color: #161616;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 31.662px; /* 158.308% */
+}
+.host-van-card-content p{
+    color: #4D4D4D;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 31.662px; /* 197.885% */
+    }
