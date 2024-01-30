@@ -1,0 +1,17 @@
+.host-nav{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 3rem;
+}
+.host-nav a{
+    color: #4D4D4D;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.923px; /* 127.348% */
+}
+.host-nav a:hover{
+    text-decoration: underline;
+    color: #161616;
+    font-weight: 700;
+}

@@ -1,0 +1,74 @@
+a{
+    text-decoration: none;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+  
+    
+}
+.card-img img{
+    border-radius: 5px;
+    width: 15rem;
+    height: 15rem;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.6rem;
+    align-items: center;
+}
+.card-content h2{
+   margin: 0;
+   color: #161616;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 31.662px; /* 158.308% */
+    margin-bottom: 0.2rem;
+}
+.card-content-price{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.card-content-price p:first-child{
+    margin: 0;
+    color: #161616;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+
+
+}
+.card-content-price p:last-child{
+    margin: 0;
+    color: #161616;
+    font-family: "Avenir Next";
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.card-button button{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #FFEAD0;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 31.662px; /* 197.885% */
+    width: 5.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.button-simple{
+    background: #E17654 ;
+}
+.button-luxury{
+    background: #161616;
+}
+.button-rugged{
+    background: #115E59;
+}

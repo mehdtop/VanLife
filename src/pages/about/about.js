@@ -1,7 +1,7 @@
 import React from "react";
 import aboutImage from "../../assets/about.png"
 import "./about.css"
-
+import { Link } from "react-router-dom"
 export default function About(){
     return(
         <div className="about">
@@ -22,7 +22,10 @@ export default function About(){
         <div className="about-container">
         <div className="about-action">
                 <h2> Your destination is waiting.Your van is ready.</h2>
+                <Link to="/van">
                 <button>Explore our vans</button>
+                </Link>
+                
             </div>
         </div>
         

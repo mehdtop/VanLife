@@ -1,0 +1,134 @@
+.back{
+    display: flex;
+    padding: 0 3rem;
+    gap: 0.6rem;
+}
+.back p{
+    margin: 0;
+    color: #201F1D;
+    font-family: Inter;
+    font-size: 15.946px;
+    font-weight: 500;
+    line-height: 22.923px; /* 143.75% */
+    text-decoration-line: underline;
+}
+.van-details-container{
+    display: flex;
+    flex-direction: column;
+}
+.van-details{
+    display: flex;
+    padding: 2.5rem 3rem;
+    gap: 3rem;
+   
+}
+.van-details img{
+    border-radius: 5px;
+    width: 30rem;
+    height: 30rem;
+}
+.van-details-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.van-details .rugged{
+    background: #115E59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.25rem;
+    height: 2rem;
+    border-radius:5px ;
+    color: #FFEAD0;
+}
+.van-details .simple{
+    background: #E17654;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.25rem;
+    height: 2rem;
+    border-radius:5px ;
+    color: #FFEAD0;
+}
+.van-details .luxury{
+    background: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.25rem;
+    height: 2rem;
+    border-radius:5px ;
+    color: #FFEAD0;
+}
+.van-details-content h2{
+    color: #161616;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 33.652px; /* 105.164% */
+}
+.van-details-price{
+    display: flex;
+    align-items: center;
+
+}
+.van-details-price p:first-child{
+    color: #161616;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 44.152px; /* 183.967% */
+}
+.van-details-price p:last-child{
+    color: #161616;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 44.152px;
+}
+.des{
+    color: #161616;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.919px; /* 149.496% */
+    margin-bottom: auto;
+}
+.van-details-content button{
+    border-radius: 5px;
+    background: #FF8C38;
+    height: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+@media screen and (max-width:900px) {
+    .van-details{
+        flex-direction: column;
+       
+    }
+    .van-details-content button{
+      margin-top: 1rem;
+    }
+    .van-details img{
+
+        width: 100%;
+
+    }
+}
+@media screen and (max-width:550px) {
+    .van-details{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .van-details img{
+        width: 100%;
+        height: 20rem;
+    }
+}

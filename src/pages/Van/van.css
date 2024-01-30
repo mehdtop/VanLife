@@ -1,0 +1,55 @@
+.van{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 3rem;
+}
+.van h1{
+    margin: 0;
+    color: #161616;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 33.652px; /* 105.164% */
+    margin-bottom: 1.5rem;
+}
+.van-filter{
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+.van-filter button{
+    border-radius: 5px;
+    background: #FFEAD0;
+    padding: 6px 26px 7px 26px;
+    margin-right: 1.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #4D4D4D;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.919px; /* 149.496% */
+}
+.van-filter button:last-child{
+    margin-left: 1.2rem;
+    text-decoration-line: underline;
+    background: #FFF7ED;
+}
+.simple:hover{
+    background: #E17654;
+    color: #FFEAD0;
+}
+.luxury:hover{
+    background: #161616;
+    color: #FFEAD0;
+}
+.rugged:hover{
+    background: #115E59;
+    color: #FFEAD0;
+}
+
+.van-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}

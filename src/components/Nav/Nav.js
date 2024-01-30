@@ -1,9 +1,13 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { NavLink , Link } from "react-router-dom"
 import logo from "../../assets/logo.png"
 import "./Nav.css"
 
 export default function Nav(){
+    const activeStyle = {
+        textDecoration: "underline",
+        color: "#161616",
+        fontWeight:"bold"}
     return(
         <div className="nav">
         <div className="nav-logo">
@@ -12,10 +16,16 @@ export default function Nav(){
             </Link>
         </div>
         <div className="nav-links">
-            <Link to="/about">
-                <p>About</p>
-            </Link>
-            <p>Van</p>
+            <NavLink to="/host" style={({isActive}) => isActive ? activeStyle : null }>
+                Host
+            </NavLink>
+            <NavLink to="/about" style={({isActive}) => isActive ? activeStyle : null }>
+              About
+            </NavLink>
+            <NavLink to="/van" style={({isActive}) => isActive ? activeStyle : null }>
+            Van
+            </NavLink>
+            
         </div>
     </div>
     )
