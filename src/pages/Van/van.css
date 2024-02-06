@@ -30,20 +30,20 @@
     font-weight: 500;
     line-height: 23.919px; /* 149.496% */
 }
-.van-filter button:last-child{
+.van-filter .clear{
     margin-left: 1.2rem;
     text-decoration-line: underline;
     background: #FFF7ED;
 }
-.simple:hover{
+.simple:hover,.simple.selected{
     background: #E17654;
     color: #FFEAD0;
 }
-.luxury:hover{
+.luxury:hover,.luxury.selected{
     background: #161616;
     color: #FFEAD0;
 }
-.rugged:hover{
+.rugged:hover,.rugged.selected{
     background: #115E59;
     color: #FFEAD0;
 }

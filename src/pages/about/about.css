@@ -56,7 +56,6 @@ line-height: 22px; /* 137.5% */
     font-family: Inter;
     outline: none;
     color: #fff;
-    cursor: pointer;
     transition: transform .1s ease-in-out;
 }
 .about-action button:hover{

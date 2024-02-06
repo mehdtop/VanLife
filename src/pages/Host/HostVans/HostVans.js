@@ -1,14 +1,18 @@
 import React from "react";
 import "./hostVans.css"
 import HostVanCard from "../../../components/HostVanCard/HostVanCard";
+import { getListVans } from "../../../api";
+import { useLoaderData } from "react-router-dom";
+import { requiredLogin } from "../../../utils";
+export async function loader(){
+    await requiredLogin()
+    return getListVans()
+}
 
 export default function HostVans(){
-    const [list,setList]=React.useState([])
-    React.useEffect(()=>{
-        fetch("/api/host/vans")
-        .then(res=>res.json())
-        .then(data=>setList(data.vans))
-    },[])
+    const list=useLoaderData()
+    
+
     const listVan=list.map(item=>{return(
             <HostVanCard key={item.id} {...item}/>
     )})

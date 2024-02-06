@@ -3,7 +3,7 @@ import "./card.css"
 import { Link } from "react-router-dom";
 export default function Card(props){
     return (
-        <Link to={`/van/${props.id}`}
+        <Link to={props.id} state={{search:`?${props.search}`}}
         aria-label={`View details for ${props.name}, 
         priced at $${props.price} per day`}>
         <div className="card">

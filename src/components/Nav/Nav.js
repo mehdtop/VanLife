@@ -1,6 +1,7 @@
 import React from "react"
 import { NavLink , Link } from "react-router-dom"
 import logo from "../../assets/logo.png"
+import icon from "../../assets/Icon.png"
 import "./Nav.css"
 
 export default function Nav(){
@@ -25,6 +26,9 @@ export default function Nav(){
             <NavLink to="/van" style={({isActive}) => isActive ? activeStyle : null }>
             Van
             </NavLink>
+            <Link to="login">
+                <img src={icon} alt="icon" className="icon"/>
+            </Link>
             
         </div>
     </div>
