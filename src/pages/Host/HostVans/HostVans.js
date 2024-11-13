@@ -1,12 +1,12 @@
 import React from "react";
 import "./hostVans.css"
 import HostVanCard from "../../../components/HostVanCard/HostVanCard";
-import { getListVans } from "../../../api";
+import { getHostVans } from "../../../api";
 import { useLoaderData } from "react-router-dom";
 import { requiredLogin } from "../../../utils";
 export async function loader(){
     await requiredLogin()
-    return getListVans()
+    return getHostVans()
 }
 
 export default function HostVans(){
@@ -14,7 +14,7 @@ export default function HostVans(){
     
 
     const listVan=list.map(item=>{return(
-            <HostVanCard key={item.id} {...item}/>
+        <HostVanCard key={item.id} {...item}/>
     )})
     return(
     <div className="host-vans">

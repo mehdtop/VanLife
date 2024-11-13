@@ -1,6 +1,7 @@
 import React from "react";
 import "./login.css"
 import { useLoaderData } from "react-router-dom";
+import { loginUser } from "../../api";
 
 export function loader({request}){
         const url=new URL(request.url).searchParams.get("message")
@@ -18,7 +19,8 @@ export default function Login(){
     }
     function handeSubmit(e){
         e.preventDefault()
-        console.log(loginFormData)
+        loginUser(loginFormData)
+        .then(data => console.log(data))
     }
 
     return(

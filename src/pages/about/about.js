@@ -22,7 +22,7 @@ export default function About(){
         <div className="about-container">
         <div className="about-action">
                 <h2> Your destination is waiting.Your van is ready.</h2>
-                <Link to="/van">
+                <Link to="/vans">
                 <button>Explore our vans</button>
                 </Link>
                 

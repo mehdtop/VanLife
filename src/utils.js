@@ -1,7 +1,12 @@
-import { redirect } from "react-router-dom";
-export async function requiredLogin(){
-    const isLoggin=false
-    if(!isLoggin){
-       return redirect("/login?message=You should  login first")
+
+export async function requiredLogin() {
+    const isLoggedIn = false; // Replace this with your actual login check logic
+
+    if (!isLoggedIn) {
+        // Optional: Include an error message in the redirect state
+        const error = new Error("You must log in first.");
+        error.status = 302; // Status code for redirection
+        error.redirectUrl = "/login?message=You must log in first.";
+        throw error;
     }
 }

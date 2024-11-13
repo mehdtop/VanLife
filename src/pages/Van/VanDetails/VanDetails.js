@@ -3,10 +3,10 @@ import "./vanDetails.css"
 import { useLocation,useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
 import arrow from "../../../assets/Arrow 1.svg"
-import { getVansId } from "../../../api";
+import { GetVans} from "../../../api";
 
 export function loader({params}){
-    return getVansId(params.id)
+    return GetVans(params.id)
 }
 export default function VanDetails(){
 
@@ -15,7 +15,8 @@ export default function VanDetails(){
 
    
     const url=location.state?.search || ""
-   const type =  (url === "" || url === "?") ? "all" : van?.type || "";
+    const type =  url.split("=")[1] ? url.split("=")[1] : "all"
+   
 
     return(
         <div className="van-details-container">

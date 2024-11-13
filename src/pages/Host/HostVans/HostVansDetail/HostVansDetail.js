@@ -3,13 +3,13 @@ import "./hostVansDetail.css"
 import { useLoaderData,NavLink,Link } from "react-router-dom";
 import arrow from "../../../../assets/Arrow 1.svg"
 import { Outlet } from "react-router-dom";
-import { getListVansDetail } from "../../../../api";
+import { getHostVans } from "../../../../api";
 import { requiredLogin } from "../../../../utils";
 
 
 export async function loader({params}){
     await requiredLogin()
-    return getListVansDetail(params.id)
+    return getHostVans(params.id)
 }
 export default function HostVansDetail(){
     const vanDetail=useLoaderData()

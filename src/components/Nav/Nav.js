@@ -23,7 +23,7 @@ export default function Nav(){
             <NavLink to="/about" style={({isActive}) => isActive ? activeStyle : null }>
               About
             </NavLink>
-            <NavLink to="/van" style={({isActive}) => isActive ? activeStyle : null }>
+            <NavLink to="/vans" style={({isActive}) => isActive ? activeStyle : null }>
             Van
             </NavLink>
             <Link to="login">
