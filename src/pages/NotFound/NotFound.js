@@ -5,8 +5,14 @@ import "./notFound.css"
 export default function NotFound(){
     return(
         <div className="not-found">
-            <h1>Sorry, the page you were looking for was not found.</h1>
-            <Link to="..">Return to home</Link>
+            <h1>404</h1>
+            <h2>Page Not Found</h2>
+            <div className="not-found-button" >
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/vans">Vans</Link>
+            <Link to="/login">Login</Link>
+            </div>
         </div>
     )
 }

@@ -24,7 +24,7 @@ const requireAuthLoader = async () => await requiredLogin();
 
 function App() {
   const router = createBrowserRouter(
-    createRoutesFromElements(
+    createRoutesFromElements(<>
       <Route path="/" element={<Layout />} errorElement={<Error />}>
         <Route index element={<Home />} />
         <Route path="login" element={<Login />} loader={loginLoader} />
@@ -42,8 +42,9 @@ function App() {
             <Route path="pricing" element={<Pricing />} loader={requireAuthLoader} />
           </Route>
         </Route>
-        <Route path="*" element={<NotFound />} />
       </Route>
+      <Route path="*" element={<NotFound />} />
+      </>
     )
   );
 
