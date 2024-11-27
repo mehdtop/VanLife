@@ -1,51 +1,47 @@
 /* error.css */
 .error-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f8f9fa;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0.46) 100%),  url("../../assets/homeImage.png"), lightgray 0px -65.191px / 100% 178.109% no-repeat;
   }
   
   .error-content {
     text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    
   }
   
   .error-content h1 {
-    font-size: 80px;
-    color: #dc3545;
+    margin: 1.5rem;
+    font-size: 240px;
     margin-bottom: 10px;
   }
   
   .error-content h2 {
-    font-size: 24px;
-    color: #343a40;
+    font-size: 80px;
     margin-bottom: 20px;
+    margin-top: 0;
   }
   
   .error-content p {
     font-size: 16px;
-    color: #6c757d;
     margin-bottom: 30px;
   }
   
   .back-link {
     display: inline-block;
-    padding: 10px 20px;
+    border: solid 2px  #FF8C38;
+    padding: 1rem 10rem;
     font-size: 18px;
     color: #ffffff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
+    border-radius: 5rem;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    margin: 2rem;
   }
   
   .back-link:hover {
-    background-color: #0056b3;
+  background: #ea6302;
   }
   

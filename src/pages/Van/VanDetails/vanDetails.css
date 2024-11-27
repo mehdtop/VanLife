@@ -101,10 +101,14 @@
 .van-details-content button{
     border-radius: 5px;
     background: #FF8C38;
+    color: white;
     height: 3rem;
     border: none;
     outline: none;
     cursor: pointer;
+}
+.van-details-content button:hover{
+    transform: translate(2px, 2px);
 }
 @media screen and (max-width:900px) {
     .van-details{

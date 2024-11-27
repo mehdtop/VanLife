@@ -35,6 +35,7 @@
     height: 50px;
     border-radius: 5px;
     background: #FF8C38;
+    color: #fff;
     border: none;
     outline: none;
     cursor: pointer;
@@ -43,5 +44,5 @@
     
 }
 .home-content button:hover{
-    transform: translate(1px, 1px);
+    transform: translate(2px, 2px);
 }

@@ -7,7 +7,6 @@ export default function Error() {
 
     // Extract error information
     const errorMessage = error?.message || "An unexpected error occurred.";
-    const statusText = error?.statusText || "Something went wrong.";
     const redirectUrl = error?.redirectUrl || "/";
     const message= error?.redirectUrl ? "go to login page by clicking the button below " :"If you want to go back home, click the button or reset the URL."
     const buttonMessage=error?.redirectUrl?"Go to login page":"Go back to Home"
@@ -15,12 +14,10 @@ export default function Error() {
     return (
         <div className="error-container">
             <div className="error-content">
-                <h1>Oooooops, Error!</h1>
+                <h1>Oops</h1>
                 <h2>{errorMessage}</h2>
-                <p>{statusText}</p>
                 <p>
                     {message}
-                    <strong><br />I'm so so so sorry, and thanks for your kindness!</strong>
                 </p>
                 <Link to={redirectUrl} className="back-link">
                      {buttonMessage}
