@@ -4,8 +4,10 @@ import HostVanCard from "../../../components/HostVanCard/HostVanCard";
 import { getHostVans } from "../../../api";
 import { useLoaderData } from "react-router-dom";
 import { requiredLogin } from "../../../utils";
-export async function loader(){
-    await requiredLogin()
+
+export async function loader({request}){
+   
+    await requiredLogin(request)
     return getHostVans()
 }
 

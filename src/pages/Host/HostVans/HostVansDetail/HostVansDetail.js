@@ -7,8 +7,8 @@ import { getHostVans } from "../../../../api";
 import { requiredLogin } from "../../../../utils";
 
 
-export async function loader({params}){
-    await requiredLogin()
+export async function loader({params , request}){
+    await requiredLogin(request)
     return getHostVans(params.id)
 }
 export default function HostVansDetail(){

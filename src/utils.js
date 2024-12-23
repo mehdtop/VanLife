@@ -1,12 +1,18 @@
+import { json } from "react-router-dom";
+export async function requiredLogin(request) {
 
-export async function requiredLogin() {
-    const isLoggedIn = false; // Replace this with your actual login check logic
+    const isLoggedIn = localStorage.getItem("loggedin");
+    const pathName=new URL(request.url).pathname
 
     if (!isLoggedIn) {
-        // Optional: Include an error message in the redirect state
-        const error = new Error("You must log in first.");
-        error.status = 302; // Status code for redirection
-        error.redirectUrl = "/login?message=You must log in first.";
-        throw error;
+        throw json(
+            {},
+            {
+                status:302,
+                headers: {
+                    Location: `/login?message=You must log in first.&redirectTo=${pathName}`
+                }
+            }
+        )
     }
 }

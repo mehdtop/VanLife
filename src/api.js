@@ -29,6 +29,6 @@ export async function loginUser(creds) {
     if (!res.ok) {
         throw new Error(`${data.message} (Status ${res.status})`);
     }
-
+    localStorage.setItem("loggedin",true)
     return data;
 }

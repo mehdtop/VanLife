@@ -26,9 +26,12 @@ export default function Nav(){
             <NavLink to="/vans" style={({isActive}) => isActive ? activeStyle : null }>
             Van
             </NavLink>
+          { localStorage.getItem("loggedin") ?
+          <button onClick={()=>localStorage.clear()}>X</button>
+          : 
             <Link to="login">
                 <img src={icon} alt="icon" className="icon"/>
-            </Link>
+            </Link>}
             
         </div>
     </div>
